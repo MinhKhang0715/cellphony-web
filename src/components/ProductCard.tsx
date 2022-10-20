@@ -7,7 +7,7 @@ import { CardActionArea } from '@mui/material';
 import { productProps } from './models';
 import './style.css'
 
-const ProductCard = (product: productProps) => {
+export default function ProductCard(product: productProps) {
   return (
     <div>
       <Card sx={{ maxWidth: 212 }} key={product.id}>
@@ -33,5 +33,3 @@ const ProductCard = (product: productProps) => {
     </div>
   );
 }
-
-export default ProductCard;
