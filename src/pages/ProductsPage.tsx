@@ -20,6 +20,5 @@ export default function ProductsPage() {
     <div>
       <ProductList products={products} />
     </div>
-
   );
 }

@@ -1,10 +1,8 @@
 import React from 'react';
 import ProductsPage from './pages/ProductsPage';
 
-function App() {
+export default function App() {
   return (
     <ProductsPage />
   )
 }
-
-export default App;
