@@ -1,4 +1,6 @@
 .product-container {
     display: grid;
     grid-template-columns: repeat(5, 20%);
+    width: 1200px;
+    margin: 0 auto;
 }

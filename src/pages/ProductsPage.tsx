@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import ProductList from "../components/ProductList";
 import { productProps } from "../components/models";
+import NavBar from "../components/NavBar";
 
 export default function ProductsPage() {
   const [products, setProducts] = useState<productProps[]>([]);
@@ -18,6 +19,7 @@ export default function ProductsPage() {
 
   return (
     <div>
+      <NavBar />
       <ProductList products={products} />
     </div>
   );

@@ -10,7 +10,7 @@ import './style.css'
 export default function ProductCard(props: productProps) {
   return (
     <div>
-      <Card sx={{ maxWidth: 212 }} key={props.id}>
+      <Card sx={{ maxWidth: 212, height: 356, mb: 1 }} key={props.id}>
         <CardActionArea onClick={() => { window.open('_blank')?.focus() }}>
           <CardMedia
             sx={{ objectFit: "contain" }}
