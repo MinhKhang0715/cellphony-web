@@ -59,6 +59,66 @@
             "name": "Xiaomi Redmi Note 11",
             "imageURL": "https://cdn2.cellphones.com.vn/358x/media/catalog/product/8/0/800x800-1-640x640-5_2.png",
             "price": 4320000
+        },
+        {
+            "id": 11,
+            "name": "Xiaomi Redmi Note 11",
+            "imageURL": "https://cdn2.cellphones.com.vn/358x/media/catalog/product/8/0/800x800-1-640x640-5_2.png",
+            "price": 4550000
+        },
+        {
+            "id": 12,
+            "name": "Samsung Galaxy A13 (4G)",
+            "imageURL": "https://cdn2.cellphones.com.vn/358x/media/catalog/product/g/a/galaxy_a13.jpg",
+            "price": 4650000
+        },
+        {
+            "id": 13,
+            "name": "Tecno POVA 3",
+            "imageURL": "https://cdn2.cellphones.com.vn/358x/media/catalog/product/p/o/pova3--hei.png",
+            "price": 4590000
+        },
+        {
+            "id": 14,
+            "name": "Xiaomi POCO M5 4GB 64GB",
+            "imageURL": "https://cdn2.cellphones.com.vn/358x/media/catalog/product/f/v/fvssxa.jpg",
+            "price": 5550000
+        },
+        {
+            "id": 15,
+            "name": "Redmi A1",
+            "imageURL": "https://cdn2.cellphones.com.vn/358x/media/catalog/product/w/1/w1q1111c_.jpg",
+            "price": 5450000
+        },
+        {
+            "id": 16,
+            "name": "Xiaomi Redmi Note 11",
+            "imageURL": "https://cdn2.cellphones.com.vn/358x/media/catalog/product/8/0/800x800-1-640x640-5_2.png",
+            "price": 5430000
+        },
+        {
+            "id": 17,
+            "name": "Xiaomi Redmi Note 11",
+            "imageURL": "https://cdn2.cellphones.com.vn/358x/media/catalog/product/8/0/800x800-1-640x640-5_2.png",
+            "price": 5320000
+        },
+        {
+            "id": 18,
+            "name": "Xiaomi Redmi Note 11",
+            "imageURL": "https://cdn2.cellphones.com.vn/358x/media/catalog/product/8/0/800x800-1-640x640-5_2.png",
+            "price": 4330000
+        },
+        {
+            "id": 19,
+            "name": "Xiaomi Redmi Note 11",
+            "imageURL": "https://cdn2.cellphones.com.vn/358x/media/catalog/product/8/0/800x800-1-640x640-5_2.png",
+            "price": 4750000
+        },
+        {
+            "id": 20,
+            "name": "Xiaomi Redmi Note 11",
+            "imageURL": "https://cdn2.cellphones.com.vn/358x/media/catalog/product/8/0/800x800-1-640x640-5_2.png",
+            "price": 4320000
         }   
     ]
 }
