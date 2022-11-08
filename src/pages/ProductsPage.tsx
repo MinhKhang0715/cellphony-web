@@ -2,25 +2,42 @@ import React, { useEffect, useState } from "react";
 import ProductList from "../components/ProductList";
 import { productProps } from "../components/models";
 import NavBar from "../components/NavBar";
+import axios from "../axios-config"
+import AppPagination from "../components/Pagination";
+
+const pageSize = 1;
 
 export default function ProductsPage() {
   const [products, setProducts] = useState<productProps[]>([]);
+  const [loading, setLoading] = useState(false);
+  const [currentPage, setCurrentPage] = useState(1);
+  const [productsPerPage] = useState(pageSize);
 
   useEffect(() => {
-    fetch("http://localhost:5000/smartPhones")
-      .then(response => {
-        if (response.ok)
-          return response.json();
-        throw response;
-      })
-      .then(data => setProducts(data))
-      .catch(error => console.error("Error fetching data: ", error))
-  }, [])
+    const fetchData = async () => {
+      setLoading(true);
+      const response = await axios.get('/products');
+      setProducts(response.data);
+      setLoading(false);
+    }
+    fetchData();
+  }, []);
+
+  let lastProductIndex = currentPage * productsPerPage;
+  let firstProductIndex = lastProductIndex - productsPerPage;
+  const currentProducts = products.slice(firstProductIndex, lastProductIndex);
+
+  const paginate = (pageNumber: number) => setCurrentPage(pageNumber);
 
   return (
-    <div>
+    <>
       <NavBar />
-      <ProductList products={products} />
-    </div>
+      <ProductList products={currentProducts} loading={loading} />
+      <AppPagination
+        itemsPerPage={productsPerPage}
+        totalItems={products.length}
+        paginate={paginate}
+      />
+    </>
   );
 }

@@ -5,14 +5,14 @@ import './style.css'
 
 export default function ProductCard(props: productProps) {
   return (
-    <div>
-      <Card sx={{ maxWidth: 212, mb: 2, boxShadow: '0px 0px 5px 0px rgba(0, 0, 0, 0.5)' }} key={props.id}>
+    <>
+      <Card sx={{ maxWidth: 212, mb: 2, boxShadow: '0px 0px 5px 0px rgba(0, 0, 0, 0.5)' }}>
         <CardActionArea sx={{ height: 356 }} onClick={() => { window.open('_blank')?.focus() }}>
-          <CardMedia  
+          <CardMedia
             sx={{ objectFit: "contain" }}
             component="img"
             height="250"
-            src={props.imageURL}
+            src={props.image_url}
             alt={props.name}
             title={props.name}
           />
@@ -26,6 +26,6 @@ export default function ProductCard(props: productProps) {
           </CardContent>
         </CardActionArea>
       </Card>
-    </div>
+    </>
   );
 }
